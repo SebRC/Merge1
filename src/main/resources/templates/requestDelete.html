@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Slette medlem</title>
+</head>
+<body>
+    <h2>Er du sikker på at du gerne vil slette medlemmet?</h2>
+    <form action="" th:action="@{/delete/} + ${memberModel.getMember_id()}" method="post">
+        <input type="hidden" th:action="${memberModel.getMember_id()}">
+        <input type="submit" value="YES"/>
+        <a href="/index">NO</a>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<title>test</title>
+
+</head>
+<body>
+<!--
+    <form th:action="@{/testCreate}" method="POST">
+    ID: <input type="hidden" th:field="${test.id}"/> <br />
+    FirstName: <input th:field = "${test.first_name}" /> <br />
+    LastName: <input th:field ="${test.last_name}" /> <br />
+
+    </form>
+-->
+
+<form th:action="@{/testCreate}" method="POST">
+    ID: <input type="hidden" th:field="${model.id}" /> <br />
+    First Name: <input th:field="${model.first_name}" /> <br />
+    Last Name <input th:field="${model.last_name}" /> <br />
+    <input type="submit" value="Save"  />
+</form>
+</body>
+</html>
